@@ -8,13 +8,15 @@ class Post
   #with the attributes set
   #Post.all = [post, post]
 
+  attr_accessor :title, :url
 
-  def intialize(array)
-
+  def initialize(array)
+    @title = array[-1].split(".")[0]
+    @url = "/posts/#{title}"
   end
 
   def self.all
-    Dir.glob("views/posts/*").collect do |filepath| #collect returns the result, each just returns original array. 
+    Dir.glob("views/posts/*").collect do |filepath| #collect returns the result, each just returns original array.
       a = filepath.split("/")
       new(a)
     end
