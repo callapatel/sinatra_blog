@@ -7,7 +7,25 @@ class MyApp < Sinatra::Base
   end
    #this is the path in the URL. Like /aboout_me this / entails HP
   get "/about-me" do
-    "I'm Calla"
+    erb :about_me
   end
+
+  get "/tweettweet" do
+    erb :twitterfeed
+  end
+  
+  get "/photos" do
+    erb :instagramgrid
+  end
+
+  get "/posts/:post_name" do
+    erb ("/posts/"+params[:post_name]).to_sym
+  end
+
+
+  # get "/posts/:post_name" do
+  #   params[:username]
+  #   #@user = User.find_by_username(params[:post_name])
+  # end
 
 end
