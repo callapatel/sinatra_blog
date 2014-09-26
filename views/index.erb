@@ -1,18 +1,53 @@
+<!-- <div id = "article "> </div> -->
+<link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
+
+<table cellspacing="5" border="0" cellpadding="0">
+
+<tr valign="top" align="left">
+
+<td width="1000"><p>
+
 <center>
-<b><h3> Welcome to my blog</h3></b>
+
+
+
+
+
+<!-- <%=erb ("/posts/gettingartsy").to_sym  %> -->
 </br></br>
+<%=erb ("/posts/sinatra-is-hard").to_sym  %>
 
-<h3> Read on</h3>
-</br></br>
 
-<a href="/posts/post_name"> Getting Artsty </a>
 
-<li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a title="Contact Calla" href="callapatel@gmail.com">Contact</a></li>
-<li id="menu-item-73" class="insta"><style>.ig-b- { display: inline-block; }
 
-.ig-b- img { visibility: hidden; }
-.ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
-.ig-b-16 { width: 16px; height: 16px; background: url(//badges.instagram.com/static/images/ig-badge-sprite-16.png) no-repeat 0 0; }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-.ig-b-16 { background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-16@2x.png); background-size: 60px 178px; } }</style>
-<a href="http://instagram.com/callapat?ref=badge" class="ig-b- ig-b-16"><img src="//badges.instagram.com/static/images/ig-badge-16.png" alt="Instagram" /></a></i></li>
+
+
+
+
+</center>
+
+
+</p></td>
+
+<td width="1" bgcolor="#707070"><BR></td>
+
+<td width="150" valign="top" align="left">
+
+<p>
+
+
+  <h3> Read on</h3>
+</br>
+<center>
+  <% @posts.each do |post| %>
+      <ul style="list-style-type:circle"><a href = "<%= post.url %>"><%= post.title %></a></ul>
+    </br>
+  <% end %></p>
+</center>
+
+
+</td>
+
+</tr>
+
+</table>
