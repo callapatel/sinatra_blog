@@ -1,0 +1,29 @@
+.header {
+  background-color: #9a3b77;
+}
+
+.brand {
+  display: inline-block;
+  background-color: red;
+}
+
+.nav {
+  display: inline-block;
+  float: right;
+  background-color: green;
+}
+
+.horizontal-list {
+  padding: 0;
+  margin: 0;
+
+
+}
+.horizontal-list li {
+  display: inline-block;
+  padding: 0 px;
+
+
+
+}
+/*were using children li elements within the list, also lists default padding of 40.. we took it out */

@@ -33,10 +33,4 @@ class MyApp < Sinatra::Base
     erb ("/posts/"+params[:post_name]).to_sym
   end
 
-
-  # get "/posts/:post_name" do
-  #   params[:username]
-  #   #@user = User.find_by_username(params[:post_name])
-  # end
-
 end

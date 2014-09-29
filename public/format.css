@@ -1,15 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
 @font-face {
   font-family: 'entypo';
   font-weight: normal;
@@ -24,8 +13,8 @@ textarea {
 
 body {
   color: #777;
-  margin-right: 300px;
-  margin-left: 300px;
+  /*margin-right: 300px;
+  margin-left: 300px;*/
   font-size: 0.8em;
   line-height: 23px;
   font-weight: 500;
@@ -37,24 +26,42 @@ a {
   color: #e57163;
   font-weight: 800;
   text-decoration: none;
-  -webkit-transition:	all 0.3s;
-  -moz-transition:	all 0.3s;
-  transition:			all 0.3s;
+
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin: 0 5px 0 0;
+.header {
+  display: inline-block;
+  /* background-color: red; */
 }
 
-li {
-    display: inline;
+.nav {
+  display: inline-block;
+  /*float: right;*/
+  /* background-color: green; */
 }
 
-article {
-  border-left: 1px solid #dddddd;
-  height: 100%;
-  padding-left: 23px;
+.nav a{
+  text-decoration: none;
+  color: pink;
+
+}
+
+.horizontal-list {
+  padding: 0;
+  margin: 0;
+
+
+}
+
+
+.horizontal-list li {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 12;
+  display: inline-block;
+  padding: 0;
+  margin: 30px 100px;
+  height: 40px;
+
+
 }

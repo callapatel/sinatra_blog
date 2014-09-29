@@ -1,4 +1,0 @@
-#pzsp-recentposts .pzsp-next span {color:#fff;}#pzsp-recentposts .pzsp-prev span {color:#fff;}#pzsp-recentposts .pzsp-next span {background-color:#555;}#pzsp-recentposts .pzsp-prev span {background-color:#555;}
-@media only screen and (min-width : 1025px) {#pzsp-recentposts h2.pzsp-entry-title {font-size: 20px}#pzsp-recentposts .pzsp-entry-body {font-size: 14px}}
-@media only screen and (min-width : 721px) and (max-width : 1024px) {#pzsp-recentposts h2.pzsp-entry-title {font-size: 18px}#pzsp-recentposts .pzsp-entry-body {font-size: 13px}}
-@media only screen and (max-width : 719px) {#pzsp-recentposts h2.pzsp-entry-title {font-size: 16px}#pzsp-recentposts .pzsp-entry-body {font-size:12px;}}
