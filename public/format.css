@@ -22,6 +22,13 @@ body {
 
 }
 
+.brand {
+    margin: 150px;
+
+
+
+}
+
 a {
   color: #e57163;
   font-weight: 800;
@@ -31,11 +38,16 @@ a {
 
 .header {
   display: inline-block;
+  font-size: 0.8em;
   /* background-color: red; */
 }
 
 .nav {
   display: inline-block;
+  position: fixed;
+  opacity: 0.4;
+  background: grey;
+  width: 100%;
   /*float: right;*/
   /* background-color: green; */
 }
@@ -48,7 +60,7 @@ a {
 
 .horizontal-list {
   padding: 0;
-  margin: 0;
+  margin: 20px 200px;
 
 
 }
@@ -60,8 +72,20 @@ a {
   font-size: 12;
   display: inline-block;
   padding: 0;
-  margin: 30px 100px;
-  height: 40px;
+  margin: 20px 80px;
+  height: 20px;
+  word-spacing: 800px;
 
+}
+
+.postspace{
+  margin: 150px;
+
+}
+
+titles{
+  font-weight: bold;
+  font-size: 200%;
+  color: black; 
 
 }

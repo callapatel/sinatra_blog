@@ -33,4 +33,9 @@ class MyApp < Sinatra::Base
     erb ("/posts/"+params[:post_name]).to_sym
   end
 
+  get "/blogs" do
+    @post = Post.all
+    erb :blogs
+  end
+
 end

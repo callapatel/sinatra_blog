@@ -1,0 +1,11 @@
+<div class = "postspace">
+<body>
+<div id ="body">
+  <% @post.each do |post| %>
+    <%= erb post.url.to_sym  %>
+    </br>
+    <hr>
+  <% end %>
+</div>
+</div>
+</body>
