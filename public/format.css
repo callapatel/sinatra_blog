@@ -13,6 +13,8 @@ textarea {
 
 body {
   color: #777;
+  margin: 0;
+  padding: 0;
   /*margin-right: 300px;
   margin-left: 300px;*/
   font-size: 0.8em;
@@ -24,9 +26,6 @@ body {
 
 .brand {
     margin: 150px;
-
-
-
 }
 
 a {
@@ -48,13 +47,15 @@ a {
   opacity: 0.4;
   background: grey;
   width: 100%;
+  font-family: 'Open Sans Condensed', sans-serif;
   /*float: right;*/
   /* background-color: green; */
 }
 
 .container {
-  width: 100%; 
+  width: 100%;
   margin: auto;
+  display: flex;
 
 }
 
@@ -66,21 +67,34 @@ a {
 
 .horizontal-list {
   padding: 0;
-  margin: 20px 200px;
+  margin: 20px 300px;
 
 
 }
 
+.point{
+  margin-left: 100px;
+
+}
+
+.horizontal-list a {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 1045px; 
+
+}
 
 .horizontal-list li {
   font-weight: bold;
   text-decoration: underline;
-  font-size: 12;
+  font-size: 20;
   display: inline-block;
   padding: 0;
-  margin: 20px 80px;
+  padding-left: 0;
+  /*margin: 20px 80px;*/
   height: 20px;
-  word-spacing: 800px;
+  /*word-spacing: 800px;*/
+  position: relative;
 
 }
 
@@ -93,5 +107,21 @@ titles{
   font-weight: bold;
   font-size: 200%;
   color: black;
+
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  /*background-color: green;*/
+  padding-left: 70%;
+  /*margin: 0 400px 500px 20px;*/
+}
+
+
+blog > .dropdown {
+  display: block;
+  /*margin: 0 60px 200px;*/
+  padding: 100px;
 
 }
