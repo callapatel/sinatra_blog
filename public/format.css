@@ -26,6 +26,9 @@ body {
 
 .brand {
     margin: 150px;
+    /*height: 50;
+    width: 170;*/
+
 }
 
 a {
@@ -80,7 +83,7 @@ a {
 .horizontal-list a {
   padding-left: 5%;
   padding-right: 5%;
-  width: 1045px; 
+  width: 1045px;
 
 }
 
@@ -124,4 +127,43 @@ blog > .dropdown {
   /*margin: 0 60px 200px;*/
   padding: 100px;
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* lalalalla */
+article{
+  text-align: justify;
+  line-height: 145%;
+  margin: auto 17%;
+}
+
+h2{
+  color: grey;
+  text-emphasis: none;
+  padding-bottom: 2%;
+}
+
+.postpic{
+  float: left;
+  padding-right: 7%;
+  padding-bottom: 5%;
 }
