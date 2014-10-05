@@ -1,21 +1,10 @@
 $(document).ready(function () {
 
+  $( "#blog" ).mouseover(
+    function() {
+      $( ".dropdown ").slideToggle();
+    });
 
-//   $( '#blog' ).hover(function () {
-//     $('.dropdown').slideToggle();
-//   });
-//
-// });
-
-//
-$( "#blog" ).mouseover(
-  function() {
-    $( ".dropdown ").slideToggle();
-  });
-
-  // }, function() {
-  //   $( ".dropdown" ).find( "span:last" ).remove();
-  // }
 var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
 $(document).keydown(function(e) {
   kkeys.push( e.keyCode );
@@ -26,6 +15,7 @@ $(document).keydown(function(e) {
   $(document).keydown(cornify_add);
 });
   }
+
 });
 
 });

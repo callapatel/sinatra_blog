@@ -20,10 +20,5 @@ class Post
       a = filepath.split("/")
       new(a)
     end
-
-
   end
-
-
-
 end

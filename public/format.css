@@ -8,7 +8,6 @@
 html,
 textarea {
   font-family: 'Open Sans', sans-serif;
-
 }
 
 body {
@@ -21,21 +20,18 @@ body {
   line-height: 23px;
   font-weight: 500;
   word-spacing: 1px;
-
 }
 
 .brand {
     margin: 150px;
     /*height: 50;
     width: 170;*/
-
 }
 
 a {
   color: #e57163;
   font-weight: 800;
   text-decoration: none;
-
 }
 
 .header {
@@ -65,26 +61,21 @@ a {
 .nav a{
   text-decoration: none;
   color: pink;
-
 }
 
 .horizontal-list {
   padding: 0;
   margin: 20px 300px;
-
-
 }
 
 .point{
   margin-left: 100px;
-
 }
 
 .horizontal-list a {
   padding-left: 5%;
   padding-right: 5%;
   width: 1045px;
-
 }
 
 .horizontal-list li {
@@ -110,7 +101,6 @@ titles{
   font-weight: bold;
   font-size: 200%;
   color: black;
-
 }
 
 .dropdown {
@@ -126,30 +116,8 @@ blog > .dropdown {
   display: block;
   /*margin: 0 60px 200px;*/
   padding: 100px;
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* lalalalla */
 article{
   text-align: justify;
   line-height: 145%;
