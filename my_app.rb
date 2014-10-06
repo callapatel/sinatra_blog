@@ -16,10 +16,14 @@ class MyApp < Sinatra::Base
     erb :about_me
   end
 
-  # post "/" do
-  #   puts params.inspect #add input into database
-  #   redirect to ("/")
-  # end
+  get "/contact" do
+    erb :contact
+  end
+
+  post "/contact" do
+    puts params.inspect #add input into database
+    redirect to ("/")
+  end
 
   get "/tweettweet" do
     erb :twitterfeed

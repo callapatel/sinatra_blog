@@ -36,7 +36,7 @@ a {
 
 .header {
   display: inline-block;
-  font-size: 0.8em;
+  font-size: 0.5em;
   /* background-color: red; */
 }
 
@@ -134,4 +134,9 @@ h2{
   float: left;
   padding-right: 7%;
   padding-bottom: 5%;
+}
+
+.banner{
+  float: none;
+  margin: 40px;
 }

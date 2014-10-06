@@ -1,10 +1,21 @@
 <form action='/about-me' method = 'POST'> ##usually method defaults to get but sinatra is only set up to 'get' in my_app. if you want to respont to a post request you need to set it up at a post in the my_app page
-  #you have to set up GET AND POST request Gets put into the body of the request rather than the head. 
+  #you have to set up GET AND POST request Gets put into the body of the request rather than the head.
   First Name:
   <input type = "test" name = "first_name " /><br>
   Last Name:
   <input type = "test" name = "last_name " /><br>
   Password:
   <input tyoe = "password" name = "password" /> <br>
+  <input type = "submit">
+</form>
+
+
+<form action='/about-me' method = 'POST'>
+  Name:
+  <input type = "test" name = "name " /><br>
+  Email:
+  <input type = "test" name = "email " /><br>
+  Inquiry:
+  <input type = "message" name = "message" /> <br>
   <input type = "submit">
 </form>
