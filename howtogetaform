@@ -19,3 +19,5 @@
   <input type = "message" name = "message" /> <br>
   <input type = "submit">
 </form>
+
+#overflow: scroll;

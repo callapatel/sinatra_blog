@@ -66,6 +66,7 @@ a {
 .horizontal-list {
   padding: 0;
   margin: 20px 300px;
+  min-width: 600px;
 }
 
 .point{
@@ -89,6 +90,7 @@ a {
   height: 20px;
   /*word-spacing: 800px;*/
   position: relative;
+  /*min-width: 100%; */
 
 }
 
