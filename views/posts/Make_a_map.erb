@@ -1,0 +1,81 @@
+<div class = 'postspace'>
+  <article>
+    <h2> Make a map using Ruby in Motion! Because hello, world is boring.
+    </h2></br></br>
+
+
+For our spike week, I became really interested in my own success with developing an IoS application for my iphone.
+The great thing about this idea is if you use something like xcode to develop your application, you can scale for
+any iphone product, such as an Ipad, different phone sizes, etc. Totally an awesome capability. On the other hand, there
+were many issues along the way that I did  not take into consideration. First, my estimation of timing learning a new
+language proved more daunting than it needed to be. Also, making an iphone app is vastly different than a rails application.
+I initially started out with the task of using xcode, which writes in C. Oh my goodness, I wanted to learn C because I literally, see it everywhere.
+But woha, taking on a new language, and a new version that doesn't relate to the MVC actions of a rails app proved daunting.
+<br>
+Thats when I found ruby in motion, which can make both iphone and droid apps! Also, its based off of the ruby language.
+With replacing me understanding the language, and then not understanding the back end I was pretty much set as a winner.
+<br>
+Today, I'm writing to show you how quick, and easy utilizing ruby in motion can be. My goal was to make an app that used a map,
+and would pin point your geography. Heres how to do it and I hope in the future someone else joins the ruby in motion community (oh yea I used a free trial).
+<br>
+<ul>
+<li> 1. Download ruby in motion. Also, the website will tell you to download xcode.</li>
+<li>2. Go to the terminal and write "motion create app_name" also, don't use the quotes. **So the cool thing about RIM, is that you can write your app through the terminal.</li>
+  <li>3. CD into your new directory that the motion action created. </li>
+    <li>4. If you LS, you should have a few files in there -- oooh, it has rake!! (kinda like a ruby build function)
+Note: The resources directory will contain the resource files of your project like images, icons, etc. The spec directory will hold test files.</li>
+<li>5. You may run rake now if you want to see what pops up.
+*what comes up is the iOS preview aka simulator files, it shows you what you app looks like (ours is blank at the moment)
+**this is what having xcode does for you:D</li>
+<li>6. Ok CD into the app directory, and open the app_delegate file.</li>
+  <li>7. Remember this file is important. It controlls your app. If you open it in a text manager, you can add other things to def delegate,
+to make your app perform really awesome tricks, like alerts.</li>
+<li>8. Heres where you learn what apple developer classes exsist. Here I had to use, UIWindow which defines the object, window. It manages the views an app displays on a
+device screen. Another we'll use is UIScreen, which also affects display.</li>
+<li>9. Back to coding -- the first thing we have to do is use these two objects to essentially set the stage for our program.
+This means going into def delegate in the app_delegate file, and inputting:
+@window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
+This allocates the memory space of our app, and contains our physical content. Every app will need this.</li>
+<li>10. Now we set this app to work with Maps, theres a class for this too. Woha! It allows for map actions, including animation.
+Before getting a map, we need to set the app to be able to view these kinds of animations, kind of fixing a view file but setting a stage for it as well.
+@window.rootViewController = AMapController.alloc.init
+Essentially, we're saying we want this view to be a map. It reminds me of the init function...</li>
+<li>11. So you saw how I snuck in AMapController, which is another class that I spoke of previously, but you also have to alloc.init on it as well. Its a class written in JAVA
+on the back end.</li>
+<li>12. Ok weird, but we have a map.. we have an cool view, and a window. What we don't have is the anticipation of user interaction.
+AHHH, we have to consider this! So in all apps you'll see,
+@window.makeKeyAndVisible
+This means that this is the window now accepts keyboard input, crazy.</li>
+<li>13. Now that we have this going on for us we have to do one more thing, create a_map_controller.rb since we need to pass
+particulars to the controller. Create this now in the terminal using your touch, also it needs to live in the app directory.</li>
+<li>14. The following information must live in the map controller:
+class AMapController < UIViewController
+def loadView
+self.view = MKMapView.alloc.init
+end
+
+def viewDidLoad
+coordinates = CLLocationCoordinate2D.new(58.85, 4.35)
+region = MKCoordinateRegionMake(coordinates, MKCoordinateSpanMake(3.1, 3.1))
+self.view.setRegion(region)
+end
+end</li>
+<li>15. The MKMapView is an Apple Developer class thing too, it gives us an object which provides an embeddable map interface.
+Allowing a configuration of the maps view on your application.</li>
+<li>16. You need to set the allocation of memory and init to it. Notice its a self method.</li>
+  <li>17. I inserted a secret spec in there not in the spec file, but the def viewDidLoad... first I give it the coordinates of Europe, passed in
+by making the coordinates variable a new instance of the coordinate 2D class given to us from MKMapView.</li>
+<li>18. You have to set the region after accepting new coordinates to make the map view into that specific area, and given its span values.
+The first argument is what you'd like the center of your app to focus on (for us its the coordinates of Europe), and then the span
+contains the horizontal and vertical span aka, the amount of map that will display to a user. It also effects the zoom levels.</li>
+<li>19. Almost there! Now go to your rakefile and specify all the cool classes we used here,
+it should resemble this:
+Motion::Project::App.setup do |app|
+# Use `rake config' to see complete project settings.
+app.name = 'app_name'
+app.frameworks += ['MapKit', 'CoreLocation']
+end</li>
+<li>20. Run Rake, and see your app in the simulator, if you have your phone connected you can run 'rake device' without quotes
+to see it appear on your phone, WA-LA! There you go.
+**Always use the crash reports as they are quite helpful!</li> </ul>
+</article>
